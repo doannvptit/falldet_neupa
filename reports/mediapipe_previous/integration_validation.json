@@ -1,0 +1,27 @@
+{
+  "torch_installed": false,
+  "runtime_tests_passed": 6,
+  "fresh_rgb_videos": [
+    {
+      "video": "/mnt/doannv/home/lumi/luvox-project/falldet/PdPdFall-ONNX/videos/20240912_101331.mp4",
+      "frames": 56,
+      "windows": 5,
+      "fall_windows": 2,
+      "max_p_fall": 0.9990633130073547,
+      "provider": "CPUExecutionProvider",
+      "codec": "h264",
+      "causal_overlay": true
+    },
+    {
+      "video": "/mnt/doannv/home/lumi/luvox-project/falldet/PdPdFall-ONNX/videos/20240912_101427.mp4",
+      "frames": 57,
+      "windows": 5,
+      "fall_windows": 3,
+      "max_p_fall": 0.9992437362670898,
+      "provider": "CPUExecutionProvider",
+      "codec": "h264",
+      "causal_overlay": true
+    }
+  ],
+  "passed": true
+}
