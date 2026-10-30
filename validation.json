@@ -1,0 +1,34 @@
+{
+  "cpu_example_probability_error": 0.0,
+  "cached_reference_device": "PyTorch CUDA, previous video inference",
+  "cached_probability_atol": 0.001,
+  "preprocessing_cases": 24,
+  "max_preprocess_abs_error": 0.0,
+  "videos": [
+    {
+      "video": "20240912_101331",
+      "windows": 5,
+      "fall_windows": 2,
+      "max_probability_error": 8.259713649749756e-05
+    },
+    {
+      "video": "20240912_101427",
+      "windows": 5,
+      "fall_windows": 3,
+      "max_probability_error": 4.673004150390625e-05
+    },
+    {
+      "video": "demo",
+      "windows": 44,
+      "fall_windows": 6,
+      "max_probability_error": 0.0002474784851074219
+    },
+    {
+      "video": "fall_0002",
+      "windows": 57,
+      "fall_windows": 3,
+      "max_probability_error": 0.00032448768615722656
+    }
+  ],
+  "passed": true
+}
