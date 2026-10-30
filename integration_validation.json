@@ -1,0 +1,184 @@
+{
+  "pipeline": "yolox_s -> rtmpose_m_halpe26 -> NTU25 XY Z=0 -> fall ONNX",
+  "adapter": "halpe26_to_ntu25_v1",
+  "torch_installed": false,
+  "mediapipe_installed": false,
+  "rtmlib_installed": false,
+  "gpu": [
+    {
+      "video": "20240912_101331",
+      "frames": 56,
+      "windows": 6,
+      "fall_windows": 2,
+      "first_fall_sec": 1.5666666666666667,
+      "max_p_fall": 0.9999995231628418,
+      "classifier_provider": "CUDAExecutionProvider",
+      "pose_providers": {
+        "detector": "CUDAExecutionProvider",
+        "pose": "CUDAExecutionProvider"
+      },
+      "elapsed_sec": 4.043994416948408,
+      "versions": {
+        "numpy": "2.4.6",
+        "opencv": "5.0.0",
+        "onnxruntime": "1.31.0"
+      },
+      "codec": "h264",
+      "all_z_zero": true,
+      "mapping_recomputed": true,
+      "causal_overlay": true
+    },
+    {
+      "video": "20240912_101427",
+      "frames": 57,
+      "windows": 7,
+      "fall_windows": 5,
+      "first_fall_sec": 1.0333333333333334,
+      "max_p_fall": 0.9999980926513672,
+      "classifier_provider": "CUDAExecutionProvider",
+      "pose_providers": {
+        "detector": "CUDAExecutionProvider",
+        "pose": "CUDAExecutionProvider"
+      },
+      "elapsed_sec": 2.8026947089238092,
+      "versions": {
+        "numpy": "2.4.6",
+        "opencv": "5.0.0",
+        "onnxruntime": "1.31.0"
+      },
+      "codec": "h264",
+      "all_z_zero": true,
+      "mapping_recomputed": true,
+      "causal_overlay": true
+    },
+    {
+      "video": "demo",
+      "frames": 282,
+      "windows": 52,
+      "fall_windows": 4,
+      "first_fall_sec": 7.166565011820331,
+      "max_p_fall": 0.9999076128005981,
+      "classifier_provider": "CUDAExecutionProvider",
+      "pose_providers": {
+        "detector": "CUDAExecutionProvider",
+        "pose": "CUDAExecutionProvider"
+      },
+      "elapsed_sec": 13.888407730031759,
+      "versions": {
+        "numpy": "2.4.6",
+        "opencv": "5.0.0",
+        "onnxruntime": "1.31.0"
+      },
+      "codec": "h264",
+      "all_z_zero": true,
+      "mapping_recomputed": true,
+      "causal_overlay": true
+    },
+    {
+      "video": "fall_0002",
+      "frames": 663,
+      "windows": 59,
+      "fall_windows": 0,
+      "first_fall_sec": null,
+      "max_p_fall": 0.015419558621942997,
+      "classifier_provider": "CUDAExecutionProvider",
+      "pose_providers": {
+        "detector": "CUDAExecutionProvider",
+        "pose": "CUDAExecutionProvider"
+      },
+      "elapsed_sec": 26.658999496954493,
+      "versions": {
+        "numpy": "2.4.6",
+        "opencv": "5.0.0",
+        "onnxruntime": "1.31.0"
+      },
+      "codec": "h264",
+      "all_z_zero": true,
+      "mapping_recomputed": true,
+      "causal_overlay": true
+    }
+  ],
+  "cpu": [
+    {
+      "video": "20240912_101331",
+      "frames": 56,
+      "windows": 6,
+      "fall_windows": 2,
+      "first_fall_sec": 1.5666666666666667,
+      "max_p_fall": 0.9999995231628418,
+      "classifier_provider": "CPUExecutionProvider",
+      "pose_providers": {
+        "detector": "CPUExecutionProvider",
+        "pose": "CPUExecutionProvider"
+      },
+      "elapsed_sec": 11.582727115019225,
+      "versions": null,
+      "codec": "h264",
+      "all_z_zero": true,
+      "mapping_recomputed": true,
+      "causal_overlay": true
+    },
+    {
+      "video": "20240912_101427",
+      "frames": 57,
+      "windows": 7,
+      "fall_windows": 5,
+      "first_fall_sec": 1.0333333333333334,
+      "max_p_fall": 0.9999980926513672,
+      "classifier_provider": "CPUExecutionProvider",
+      "pose_providers": {
+        "detector": "CPUExecutionProvider",
+        "pose": "CPUExecutionProvider"
+      },
+      "elapsed_sec": 11.879722491954453,
+      "versions": null,
+      "codec": "h264",
+      "all_z_zero": true,
+      "mapping_recomputed": true,
+      "causal_overlay": true
+    },
+    {
+      "video": "demo",
+      "frames": 282,
+      "windows": 52,
+      "fall_windows": 4,
+      "first_fall_sec": 7.166565011820331,
+      "max_p_fall": 0.9999096393585205,
+      "classifier_provider": "CPUExecutionProvider",
+      "pose_providers": {
+        "detector": "CPUExecutionProvider",
+        "pose": "CPUExecutionProvider"
+      },
+      "elapsed_sec": 64.45557430095505,
+      "versions": null,
+      "codec": "h264",
+      "all_z_zero": true,
+      "mapping_recomputed": true,
+      "causal_overlay": true
+    },
+    {
+      "video": "fall_0002",
+      "frames": 663,
+      "windows": 59,
+      "fall_windows": 0,
+      "first_fall_sec": null,
+      "max_p_fall": 0.015249617397785187,
+      "classifier_provider": "CPUExecutionProvider",
+      "pose_providers": {
+        "detector": "CPUExecutionProvider",
+        "pose": "CPUExecutionProvider"
+      },
+      "elapsed_sec": 125.53865031898022,
+      "versions": null,
+      "codec": "h264",
+      "all_z_zero": true,
+      "mapping_recomputed": true,
+      "causal_overlay": true
+    }
+  ],
+  "tests_passed": 17,
+  "ground_truth": null,
+  "limitation": "No accuracy claim: fall_0002 has no alert at threshold 0.5 with the new estimator/adapter.",
+  "passed": true,
+  "cache_reuse_exact_windows_match": true
+}
