@@ -1,0 +1,30 @@
+{
+  "yolox_s": {
+    "source": "https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/onnx_sdk/yolox_s_8xb8-300e_humanart-3ef259a7.zip",
+    "official_source": "https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/onnx_sdk/yolox_s_8xb8-300e_humanart-3ef259a7.zip",
+    "archive_sha256": "e8e8f51cb9c70ed1c3781ed12f1debf918d78cf94638554f1a467f704f627349",
+    "sha256": "332e09ea9696e3401049b6c5314851db020b6430f85da159e65f37034ab3aee8",
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "file": "yolox_s.onnx",
+    "bytes": 35998962
+  },
+  "rtmpose_m_halpe26": {
+    "source": "https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/onnx_sdk/rtmpose-m_simcc-body7_pt-body7-halpe26_700e-256x192-4d3e73dd_20230605.zip",
+    "official_source": "https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/onnx_sdk/rtmpose-m_simcc-body7_pt-body7-halpe26_700e-256x192-4d3e73dd_20230605.zip",
+    "archive_sha256": "55b81170e236040b59fc792ad0a8315301ac4c079a3bdb1095d838aad3088d18",
+    "sha256": "26f3a19e61304a600dfb82d1001d41d24343b89fc70a33ffc84657e0b0bf2ecf",
+    "input_shape": [
+      1,
+      3,
+      256,
+      192
+    ],
+    "file": "rtmpose_m_halpe26.onnx",
+    "bytes": 55685444
+  }
+}
